@@ -1,0 +1,82 @@
+.works{
+    padding: 139px 0 128px;
+
+    @media (max-width: $tablet){
+        padding: 64px 0;
+               }
+    
+               &__hero{
+                padding-bottom: 128px;
+                display: flex;
+                justify-content: space-between;
+                gap: 439px;
+
+                @media (max-width: $tablet){
+                    padding-bottom: 48px;
+                    flex-direction: column;
+                    gap: 48px;
+                    align-items: flex-start;
+               }
+            }
+
+               &__describe{
+                max-width: 541px;
+                color: $color-black;
+                
+                @media (max-width: $tablet){
+                    max-width: 288px;
+                    color: #323232;
+               }
+               }
+
+               &__row{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+
+                @media (max-width: $tablet){
+                    gap: 64px;
+               }
+               }
+
+               &__item{
+                display: flex;
+                justify-content: space-between;
+                
+
+                @media (max-width: $tablet){
+                   flex-direction: column;
+                   flex-direction: column-reverse;
+                    gap: 24px;
+                     }
+               }
+               &__item-title{
+                color: $color-black;
+                margin-bottom: 50px;
+
+                &::after{
+                    display: block;
+                    content: '';
+                    width: 85px;
+                    height: 1px;
+background-color: #CCCCCC;
+margin-top: 16px;
+                }
+               }
+
+               &__item-text{
+                margin-bottom: 16px;
+               }
+
+               &__item-date{
+                margin-bottom: 39px;
+               }
+
+               &__img{
+                max-width: 544px;
+
+                @media (max-width: $tablet){
+                    max-width: 288px;
+                      }
+               }
+}
